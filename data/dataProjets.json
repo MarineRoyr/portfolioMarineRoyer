@@ -4,28 +4,35 @@
     "picture": "images/thumbs/projets/quelle-date.png",
     "description": "Appli web pour la recherche de dates historiques et la génération de fiche de révision",
     "stacks": ["React", "Sass"],
-    "githubUrl": "https://github.com/MarineRoyr/Booki"
+    "githubUrl": "https://github.com/MarineRoyr/quelle-Date"
     },
     {
         "title": "Kasa",
         "picture": "images/thumbs/projets/kasa.png",
         "description": "Site de location immobilière",
         "stacks": ["React", "Sass"],
-        "githubUrl": "https://github.com/MarineRoyr/Booki"
+        "githubUrl": "https://github.com/MarineRoyr/kasa"
     },
     {
         "title": "Mon Vieux Grimoire",
         "picture": "images/thumbs/projets/monVieuxGrimoire.png",
-        "description": "site de présentation et de notation de livres",
+        "description": "Site de présentation et de notation de livres",
         "stacks": ["Node.js", "React"],
-        "githubUrl": "https://github.com/MarineRoyr/Booki"
+        "githubUrl": "https://github.com/MarineRoyr/Mon-vieux-grimoire"
     },
     {
-        "title": "Nina Carducci",
+        "title": "Nina Carducci, Photographe",
         "picture": "images/thumbs/projets/ninaCarducci.png",
         "description": "Optimisation des performances du site et du référencement naturel/SEO",
         "stacks": ["SEO"],
-        "githubUrl": "https://github.com/MarineRoyr/Booki"
+        "githubUrl": "https://github.com/MarineRoyr/Nina-Carducci-Dev"
+    },
+    {
+        "title": "Portfolio Sophie Bluel",
+        "picture": "images/thumbs/projets/sophieBluel.png",
+        "description": "Portfolio d'une architecte d'intérieur avec espace Admin",
+        "stacks": ["Javascript", "Intégration Html"],
+        "githubUrl": "https://github.com/MarineRoyr//Portfolio-architecte-sophie-bluel"
     },
     {
         "title": "Booki",

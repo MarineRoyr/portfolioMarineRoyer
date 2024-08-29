@@ -704,7 +704,7 @@ a {
   -webkit-transition: color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
-  color: #1b4561;
+  color: #264857;
 }
 
 sub {
@@ -742,7 +742,7 @@ table {
 
 .box {
   background: #ffffff;
-  color: #39454b;
+  color: #264857;
   padding: 2em;
 }
 
@@ -780,7 +780,7 @@ button {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #10334b;
+  background-color: #264857;
   border: 0;
   border-radius: 3.5em;
   color: #ffffff;
@@ -837,7 +837,7 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 .button:hover,
 button:hover {
-  background-color: #2d5169;
+  background-color: #2d6069;
 }
 
 input[type="button"]:active,
@@ -845,7 +845,7 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 .button:active,
 button:active {
-  background-color: #2d5169;
+  background-color: #2d6069;
 }
 
 input[type="button"].style2,
@@ -974,7 +974,7 @@ textarea {
   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: #39454b;
+  color: #355158;
   display: block;
   width: 100%;
   padding: 0.65em 0.75em;
@@ -993,7 +993,7 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #9ac8e9;
+  border-color: #657971;
 }
 
 input[type="text"],
@@ -1355,6 +1355,13 @@ table.default tfoot {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.stacks-gallery .gallery-item:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 /* Poptrox */
@@ -1412,11 +1419,11 @@ table.default tfoot {
   background: #ffffff;
   width: 100%;
   height: 12em;
-  line-height: 2.3em;
+  line-height: 2.1em;
   text-align: center;
   cursor: default;
   z-index: 1;
-  font-size: 0.7em;
+  font-size: 1em;
 }
 
 .poptrox-popup .caption ul {
@@ -1426,10 +1433,27 @@ table.default tfoot {
 }
 
 .poptrox-popup .caption .stack-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #10334b;
   color: #ffffff;
-  width: 30%;
+  width: 20%;
+  height: 30px;
   border-radius: 20px;
+  font-size: 0.7em;
+}
+
+.poptrox-popup .caption .github-link {
+  font-size: 18px;
+  padding: 8px 7px 7px 7px;
+  text-decoration: none;
+  border: solid #10334b 1px;
+  border-radius: 20px;
+}
+
+.poptrox-popup .caption .github-link:hover {
+  opacity: 0.7;
 }
 
 .poptrox-popup .nav-next,
@@ -1575,10 +1599,10 @@ body.is-touch .poptrox-popup .closer {
 }
 
 .gallery article {
-  -moz-transition: -moz-transform 1s ease, opacity 1s ease;
-  -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-  -ms-transition: -ms-transform 1s ease, opacity 1s ease;
-  transition: transform 1s ease, opacity 1s ease;
+  -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -1589,6 +1613,11 @@ body.is-touch .poptrox-popup .closer {
   position: relative;
   opacity: 1;
   box-shadow: rgba(5, 17, 27, 0.404) 0px 0.1em 0.15em 0px;
+}
+
+.gallery article:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
 }
 
 .gallery article .image {
@@ -1984,7 +2013,7 @@ body.is-touch .poptrox-popup .closer {
   top: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
-  height: 3em;
+  height: 3.5em;
   line-height: 3em;
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
@@ -2000,6 +2029,11 @@ body.is-touch .poptrox-popup .closer {
 
 #header h1 a {
   font-size: 1.25em;
+}
+
+#header p {
+  margin-left: 22px;
+  font-size: 0.8em;
 }
 
 #header nav {
@@ -2200,7 +2234,7 @@ main > .fullscreen {
 }
 
 .main.style3.secondary {
-  background: #b6ced3;
+  background: #274a50;
 }
 
 .main.dark {
@@ -2321,7 +2355,7 @@ body.is-touch .main {
   margin: 0;
   line-height: 1em;
   padding: 1.5em;
-  background: #39454b;
+  background: #304947;
   color: rgba(185, 186, 187, 0.5);
   overflow: hidden;
 }
@@ -2415,6 +2449,12 @@ body.is-touch .main {
 #contact {
   overflow: hidden;
   padding-bottom: 0;
+  color: #fff;
+}
+
+#contact p {
+  margin-top: 5px;
+  font-size: 1.2em;
 }
 
 #contact .box {

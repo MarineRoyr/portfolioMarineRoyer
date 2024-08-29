@@ -1,30 +1,30 @@
 [  
     {
-        "title": "HTML5/CSS3",
-        "picture": "images/thumbs/stacks/nodejs.png"
+        "title": "Html/Css/Js",
+        "picture": "images/thumbs/stacks/htmlCssJs.png"
     }, 
     {
-        "title": "REACT",
+        "title": "React",
+        "picture": "images/thumbs/stacks/react.png"
+    },
+    {
+        "title": "Sass",
+        "picture": "images/thumbs/stacks/sass.png"
+    },
+    {
+        "title": "Node.Js",
         "picture": "images/thumbs/stacks/nodejs.png"
     },
     {
-        "title": "SASS",
-        "picture": "images/thumbs/stacks/nodejs.png"
+        "title": "MongoDB",
+        "picture": "images/thumbs/stacks/mongodb.png"
     },
     {
-        "title": "NODE.JS",
-        "picture": "images/thumbs/stacks/nodejs.png"
+        "title": "Figma",
+        "picture": "images/thumbs/stacks/figma.png"
     },
     {
-        "title": "MONGODB",
-        "picture": "images/thumbs/stacks/nodejs.png"
-    },
-    {
-        "title": "FIGMA",
-        "picture": "images/thumbs/stacks/nodejs.png"
-    },
-    {
-        "title": "GIT/GITHUB",
-        "picture": "images/thumbs/stacks/nodejs.png"
+        "title": "Git/Git Hub",
+        "picture": "images/thumbs/stacks/github.png"
     }
 ]
