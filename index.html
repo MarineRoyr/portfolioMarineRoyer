@@ -18,42 +18,47 @@
 			<header id="header">
 				<h1>Marine ROYER </h1>
 				<p>Développeur web junior</p>
-				<nav>
+					<nav>
 					<ul>
-						<li><a href="#intro">A Propos</a></li>
-						<li><a href="#one">Mon CV</a></li>
+						<li><a href="#intro">Accueil</a></li>
+						<li><a href="#one">A propos</a></li>
 						<li><a href="#two">Mes stacks</a></li>
 						<li><a href="#work">Mes projets</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><a href="https://www.linkedin.com/in/marine-royer-91b2742a1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
 					</ul>
 				</nav>
+				
 			</header>
-
+			
+	
+		<main class="main" >	
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
-					<header>
-						<h2>A Propos</h2>
-					</header>
-					<p>Hello, je m'appelle Marine Royer.</p>
-					<p>Développeuse web orientée React et Node.js de formation, basée dans le 77.</p>
-					<footer>
+					<div>
+						<h2>Hello, je m'appelle Marine Royer.</h2>
+					</div>
+					<p>Développeuse web orientée React et Node.js de formation, basée dans en Seine et Marne (77).</p>
+					<div>
 						<a href="#one" class="button style2 down">More</a>
-					</footer>
+					</div>
 				</div>
 			</section>
 
 		<!-- One -->
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
-					<header>
-						<h2>Mon CV</h2>
-					</header>
-					<button>Télécharger</button>
-					<h4>Une petite présentation</h4>
-					<p>Après l'obtention d'un titre RNCP développeur web, je suis à la recherche d'un poste de développeur junior afin de mettre en pratique mes connaissances et évoluer sur le terrain.</p>
-					<p>J'ai de solides bases sur les langages basiques tels que HTML, CSS et Javascript, je travaille sur React et Node.js. Je maîtrise les bases de Git, GitHub et Gitflow. Anciennement graphiste, j'ai une certaine appétence pour le frontend et l'UX. </p>
+					<div>
+					<h2>A propos </h2> 
+					</div>
+					<p>Après l'obtention d'un titre RNCP développeur web, je suis à<span>la recherche d'un poste de développeur junior / intégrateur web. </span>afin de mettre en pratique mes connaissances et évoluer sur le terrain.</p>
+					<p>J'ai de solides bases sur les langages basiques tels que HTML, CSS et Javascript, je travaille sur<span> React et Node.js</span>. Je maîtrise les bases de Git, GitHub et Gitflow. Anciennement graphiste, j'ai une certaine appétence pour le frontend et l'UX Design. </p>
 					<p>Je suis mobile sur tout l'est francilien et à Paris.</p>
+					<a href="./public/CV_webdevelopper_MarineRoyer.pdf" download="CV_webdevelopper_MarineRoyer.pdf">
+						<button>Mon CV</button>
+					</a>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -61,82 +66,81 @@
 		<!-- Two -->
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
-					<header>
+					<div>
 						<h2>Mes Stacks</h2>
-					</header>
-					<p>Stacks </p>
+					</div>
+					<div class="stacks-gallery"> </div>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
-						<h2>Mes projets</h2>
-						
-					</header>
-
-					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
-
+		<section id="work" class="main style3 primary">
+			<div class="content">
+				<h2>Mes projets</h2>
+				<!-- Gallery -->
+				<div id="gallery" class="gallery">
+					<!-- Les projets seront insérés ici par JavaScript -->
 				</div>
-			</section>
+			</div>
+		</section>
+		
 
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
-					<header>
-						<h2>Laissez moi un message</h2>
-						<p>Je vous répondrais au plus vite</p>
-					</header>
+					<div>
+						<h2>Me contacter</h2>
+						<p>Une question ? Une opportunité ?</p>
+						<p>Laissez moi un message</p>
+					</div>
 					<div class="box">
-						<form method="post" action="#">
+						<form id="contact-form">
 							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+								<div class="field half">
+									<input type="text" name="name" placeholder="Name" required />
+								</div>
+								<div class="field half">
+									<input type="email" name="email" placeholder="Email" required />
+								</div>
+								<div class="field">
+									<textarea name="message" placeholder="Message" rows="6" required></textarea>
+								</div>
 							</div>
 							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
+								<li><input type="submit" value="Envoyer votre message" /></li>
 							</ul>
 						</form>
+						
+						<script type="text/javascript">
+							document.getElementById('contact-form').addEventListener('submit', function(event) {
+								event.preventDefault(); 
+								emailjs.sendForm('service_5ybkyhw', 'template_aapgas1', this)
+									.then(function() {
+										alert('Message envoyé avec succès!');
+									}, function(error) {
+										alert('Échec de l\'envoi du message : ' + JSON.stringify(error));
+									});
+							});
+						</script>
+						
 					</div>
 				</div>
 			</section>
 
+		</main>
 		<!-- Footer -->
 			<footer id="footer">
 
 				<!-- Icons -->
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.linkedin.com/in/marine-royer-91b2742a1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
 					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
-						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Marine ROYER</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</footer>
@@ -150,6 +154,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
+			<script src="assets/js/stacks.js"></script>
+			<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script type="text/javascript">
+   				(function(){
+      			emailjs.init("fREZ2M5fk69qDNbOx"); 
+   				})();
+			</script>
 
 	</body>
 </html>

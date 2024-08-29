@@ -1,0 +1,30 @@
+[  
+    {
+        "title": "HTML5/CSS3",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    }, 
+    {
+        "title": "REACT",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    },
+    {
+        "title": "SASS",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    },
+    {
+        "title": "NODE.JS",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    },
+    {
+        "title": "MONGODB",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    },
+    {
+        "title": "FIGMA",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    },
+    {
+        "title": "GIT/GITHUB",
+        "picture": "images/thumbs/stacks/nodejs.png"
+    }
+]

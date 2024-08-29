@@ -9,6 +9,7 @@
 	.image {
 		position: relative;
 		display: inline-block;
+		
 
 		&:before {
 			content: '';
@@ -33,7 +34,7 @@
 
 		&.fit {
 			display: block;
-			width: 100%;
+			width: 100%;			
 		}
 
 		&.left {

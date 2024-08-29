@@ -1,0 +1,37 @@
+[  
+    {
+    "title": "Quelle-Date",
+    "picture": "images/thumbs/projets/quelle-date.png",
+    "description": "Appli web pour la recherche de dates historiques et la génération de fiche de révision",
+    "stacks": ["React", "Sass"],
+    "githubUrl": "https://github.com/MarineRoyr/Booki"
+    },
+    {
+        "title": "Kasa",
+        "picture": "images/thumbs/projets/kasa.png",
+        "description": "Site de location immobilière",
+        "stacks": ["React", "Sass"],
+        "githubUrl": "https://github.com/MarineRoyr/Booki"
+    },
+    {
+        "title": "Mon Vieux Grimoire",
+        "picture": "images/thumbs/projets/monVieuxGrimoire.png",
+        "description": "site de présentation et de notation de livres",
+        "stacks": ["Node.js", "React"],
+        "githubUrl": "https://github.com/MarineRoyr/Booki"
+    },
+    {
+        "title": "Nina Carducci",
+        "picture": "images/thumbs/projets/ninaCarducci.png",
+        "description": "Optimisation des performances du site et du référencement naturel/SEO",
+        "stacks": ["SEO"],
+        "githubUrl": "https://github.com/MarineRoyr/Booki"
+    },
+    {
+        "title": "Booki",
+        "picture": "images/thumbs/projets/booki.png",
+        "description": "Site pour le tourisme et la location saisonnière",
+        "stacks": ["Integration HTML", "Figma"],
+        "githubUrl": "https://github.com/MarineRoyr/Booki"
+    }
+]
