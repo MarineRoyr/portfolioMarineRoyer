@@ -16,8 +16,9 @@
 
 		<!-- Header -->
 			<header id="header">
+				<img src="./images/thumbs/marineRoyer.png" alt="logo"/>
 				<h1>Marine ROYER </h1>
-				<p>Développeur web junior</p>
+				<h2>Développeur web junior</h2>
 					<nav>
 					<ul>
 						<li><a href="#intro">Accueil</a></li>
@@ -40,7 +41,7 @@
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
 					<div>
-						<h2>Hello, je m'appelle Marine Royer.</h2>
+						<h2>Hello, c'est Marine</h2>
 					</div>
 					<p>Développeuse web orientée React et Node.js de formation, basée dans en Seine et Marne (77).</p>
 					<div>
@@ -100,19 +101,23 @@
 						<form id="contact-form">
 							<div class="fields">
 								<div class="field half">
-									<input type="text" name="name" placeholder="Name" required />
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" placeholder="Name" required />
 								</div>
 								<div class="field half">
-									<input type="email" name="email" placeholder="Email" required />
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" placeholder="Email" required />
 								</div>
 								<div class="field">
-									<textarea name="message" placeholder="Message" rows="6" required></textarea>
+									<label for="message">Message</label>
+									<textarea id="message" name="message" placeholder="Message" rows="6" required></textarea>
 								</div>
 							</div>
 							<ul class="actions special">
 								<li><input type="submit" value="Envoyer" /></li>
 							</ul>
 						</form>
+						
 						
 						<script type="text/javascript">
 							document.getElementById('contact-form').addEventListener('submit', function(event) {

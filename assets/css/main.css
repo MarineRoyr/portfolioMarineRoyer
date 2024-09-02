@@ -601,6 +601,7 @@ body,
 input,
 textarea,
 select {
+  box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
   font-family: "Source Sans Pro", "sans-serif";
   font-weight: 300;
   font-size: 18pt;
@@ -744,6 +745,7 @@ table {
   background: #ffffff;
   color: #264857;
   padding: 2em;
+  border-radius: 25px;
 }
 
 .box > :last-child {
@@ -974,12 +976,12 @@ textarea {
   -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: #355158;
+  color: #274a50;
+
   display: block;
   width: 100%;
   padding: 0.65em 0.75em;
   background: none;
-  border: solid 2px #e5e6e7;
   color: inherit;
   border-radius: 0.5em;
   outline: none;
@@ -993,7 +995,7 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-  border-color: #657971;
+  border-color: #39454b;
 }
 
 input[type="text"],
@@ -1375,8 +1377,12 @@ table.default tfoot {
   margin-top: 65px;
   padding-bottom: 3em;
   box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
 }
 
+.poptrox-popup .pic img {
+  border-radius: 25px;
+}
 .poptrox-popup .loader {
   position: absolute;
   top: 50%;
@@ -1418,41 +1424,69 @@ table.default tfoot {
   left: 0;
   background: #ffffff;
   width: 100%;
-  height: 12em;
+  height: 15em;
   line-height: 2.1em;
   text-align: center;
   cursor: default;
   z-index: 1;
   font-size: 1em;
+  border-radius: 25px;
 }
 
-.poptrox-popup .caption ul {
+.poptrox-popup .caption .div-poptrox p {
+  font-size: 0.7em;
+}
+
+.poptrox-popup .caption .div-poptrox {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 40px;
+  align-self: center;
+  gap: 20px;
+}
+
+.poptrox-popup .caption .div-poptrox h4 {
+  font-size: 0.7em;
+}
+
+.poptrox-popup .caption .div-poptrox ul {
   display: flex;
   gap: 5px;
   justify-content: center;
+  align-self: center;
+  margin: 0;
 }
 
-.poptrox-popup .caption .stack-gallery {
+.poptrox-popup .caption .div-poptrox .stack-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #10334b;
   color: #ffffff;
-  width: 20%;
   height: 30px;
+  width: 150px;
   border-radius: 20px;
   font-size: 0.7em;
+  box-shadow: 0.1em 0.1em 0.15em 0.1em rgba(0, 0, 0, 0.15);
 }
 
-.poptrox-popup .caption .github-link {
-  font-size: 18px;
-  padding: 8px 7px 7px 7px;
+.poptrox-popup .caption .link-container a {
+  font-size: 14px;
+  padding: 0px 15px 0px 15px;
   text-decoration: none;
-  border: solid #10334b 1px;
+  box-shadow: 0.1em 0.15em 0.25em 0.1em rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 25px;
 }
 
-.poptrox-popup .caption .github-link:hover {
+.poptrox-popup .caption .link-container a svg {
+  vertical-align: middle;
+}
+
+.poptrox-popup .caption .link-container a:hover {
   opacity: 0.7;
 }
 
@@ -1580,6 +1614,20 @@ body.is-touch .poptrox-popup .closer {
     background-size: contain;
     opacity: 0.65;
   }
+
+  .poptrox-popup .caption {
+    line-height: 20px;
+  }
+
+  .poptrox-popup .caption .div-poptrox {
+    margin-left: 10px;
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .poptrox-popup .caption .div-poptrox .stack-gallery {
+    width: 70px;
+  }
 }
 
 /* Gallery */
@@ -1598,6 +1646,10 @@ body.is-touch .poptrox-popup .closer {
   margin: 2em auto 2em auto;
 }
 
+.gallery p {
+  font-size: 0.7em;
+}
+
 .gallery article {
   -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
   -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
@@ -1613,6 +1665,7 @@ body.is-touch .poptrox-popup .closer {
   position: relative;
   opacity: 1;
   box-shadow: rgba(5, 17, 27, 0.404) 0px 0.1em 0.15em 0px;
+  border-radius: 25px;
 }
 
 .gallery article:hover {
@@ -2018,9 +2071,14 @@ body.is-touch .poptrox-popup .closer {
   box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 }
 
+#header img {
+  width: 7%;
+  height: auto;
+}
+
 #header h1 {
   position: absolute;
-  left: 1em;
+  left: 8%;
   top: 0;
   height: 3em;
   line-height: 3em;
@@ -2031,9 +2089,13 @@ body.is-touch .poptrox-popup .closer {
   font-size: 1.25em;
 }
 
-#header p {
-  margin-left: 22px;
+#header h2 {
+  position: absolute;
+  left: 8%;
+  top: 60%;
+  cursor: default;
   font-size: 0.8em;
+  font-weight: 550;
 }
 
 #header nav {
@@ -2052,6 +2114,7 @@ body.is-touch .poptrox-popup .closer {
   display: inline-block;
   margin-left: 0.5em;
   font-size: 0.9em;
+  font-weight: 700;
 }
 
 #header nav ul li a {
@@ -2066,21 +2129,28 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 736px) {
   #header {
-    height: 2.5em;
-    line-height: 2.5em;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #header img {
+    width: 200px;
+    height: auto;
   }
 
   #header h1 {
-    text-align: center;
     position: relative;
-    left: 0;
-    top: 0;
-    height: 2.5em;
-    line-height: 2.5em;
   }
 
   #header h1 a {
     font-size: 1em;
+  }
+
+  #header h2 {
+    font-size: 0.8em;
+    position: relative;
   }
 
   #header nav {
@@ -2190,6 +2260,13 @@ main > .fullscreen {
   position: relative;
   width: 35%;
   margin: 0;
+}
+.main.style2.left > .content {
+  border-radius: 0px 25px 25px 0px;
+}
+
+.main.style2.right > .content {
+  border-radius: 25px 0px 0px 25px;
 }
 
 .main.style2.left {
@@ -2355,8 +2432,9 @@ body.is-touch .main {
   margin: 0;
   line-height: 1em;
   padding: 1.5em;
-  background: #304947;
-  color: rgba(185, 186, 187, 0.5);
+  border: solid 0.1px #274a50;
+  background: white;
+  color: #274a50;
   overflow: hidden;
 }
 
@@ -2369,7 +2447,7 @@ body.is-touch .main {
 }
 
 #footer a:hover {
-  color: #b9babb;
+  color: #7195ad;
 }
 
 #footer ul.menu {
@@ -2424,6 +2502,11 @@ body.is-touch .main {
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
   background-repeat: repeat, no-repeat;
+}
+
+#intro p {
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 /* One */
