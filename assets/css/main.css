@@ -1510,14 +1510,13 @@ table.default tfoot {
   left: 0;
   background: #ffffff;
   width: 100%;
-  height: 15em;
   line-height: 2.1em;
   text-align: center;
   cursor: default;
   z-index: 1;
   font-size: 1em;
   border-radius: 25px;
-  height: 33%;
+  height: 35%;
 }
 
 .poptrox-popup .caption .div-poptrox p {
