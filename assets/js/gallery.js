@@ -66,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 usePopupDefaultStyling: false,
                 popupSpeed: 300,
                 windowMargin: 50,
-                popupWidth: '80%',
-                popupHeight: '70%',
+                popupWidth: '85%',
+                popupHeight: '85%',
                 fadeSpeed: 300,
             });
         })

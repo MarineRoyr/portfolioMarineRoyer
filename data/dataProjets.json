@@ -2,7 +2,8 @@
     {
     "title": "Quelle-Date",
     "picture": "images/thumbs/projets/quelle-date.png",
-    "description": "Application web de recherche historique & génération de fiche révision",
+    "description": "Application web de recherche historique & génération de fiche révision. ",
+    "works" : "La difficulté est venue des données historiques variables, le CSS  & la génération de pdf ont dû s'adapter. Ce site est un projet encore en développement.",
     "stacks": ["React", "Sass"],
     "githubUrl": "https://github.com/MarineRoyr/quelle-Date",
     "websiteUrl":"https://marineroyr.github.io/quelle-date/"
@@ -11,13 +12,16 @@
         "title": "Kasa",
         "picture": "images/thumbs/projets/kasa.png",
         "description": "Application web d'annonces de locations immobilières",
+        "works" : "Maîtrise de React et de son principes de composants imbriqués et hooks. Le challenge fut de créer des animations CSS fluides sur le collapse et une expérience visuelle agréable.",
         "stacks": ["React", "Sass"],
-        "githubUrl": "https://github.com/MarineRoyr/kasa"
+        "githubUrl": "https://github.com/MarineRoyr/kasa",
+        "websiteUrl" : "https://kasa-marineroyer.netlify.app"
     },
     {
         "title": "Mon Vieux Grimoire",
         "picture": "images/thumbs/projets/monVieuxGrimoire.png",
         "description": "Site de présentation & de notation de livres",
+        "works" : "Projet pour appréhender la puissance de Node.js et l'architecture MVC en back end. ",
         "stacks": ["Node.js", "React"],
         "githubUrl": "https://github.com/MarineRoyr/Mon-vieux-grimoire"
     },
@@ -27,12 +31,14 @@
         "description":"Site vitrine d'une photographe professionnelle",
         "works": "Optimisation des performances du site & du référencement naturel/SEO",
         "stacks": ["SEO"],
-        "githubUrl": "https://github.com/MarineRoyr/Nina-Carducci-Dev"
+        "githubUrl": "https://github.com/MarineRoyr/Nina-Carducci-Dev",
+        "websiteUrl":"https://ninacarducci-marineroyer.netlify.app/"
     },
     {
         "title": "Portfolio Sophie Bluel",
         "picture": "images/thumbs/projets/sophieBluel.png",
         "description": "Portfolio d'une architecte d'intérieur avec espace Admin",
+        "works" : "Projet pour appréhender la logique javascript, création d'un mode admin avec requêtes http du front end vers le back end et manipulation des données.",
         "stacks": ["Javascript", "Intégration Html"],
         "githubUrl": "https://github.com/MarineRoyr//Portfolio-architecte-sophie-bluel"
     },
@@ -40,7 +46,9 @@
         "title": "Booki",
         "picture": "images/thumbs/projets/booki.png",
         "description": "Site pour le tourisme & la location saisonnière",
+        "works" : "Apprentissage de la sémantique HTML5, des bonnes pratiques du responsive et de CSS3. Challenge avec créations de cards, utilisation des grids css et des media queries.",
         "stacks": ["Integration HTML", "Figma"],
-        "githubUrl": "https://github.com/MarineRoyr/Booki"
+        "githubUrl": "https://github.com/MarineRoyr/Booki",
+        "websiteUrl":"https://booki-marineroyer.netlify.app/"
     }
 ]

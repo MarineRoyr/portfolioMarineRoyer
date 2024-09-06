@@ -1363,6 +1363,10 @@ table.default tfoot {
   transition: transform 0.3s ease-in-out;
 }
 
+.stacks-gallery .gallery-item img {
+  width: 150px;
+}
+
 .stacks-gallery .gallery-item:hover {
   transform: scale(1.1);
   opacity: 0.9;
@@ -1387,7 +1391,7 @@ table.default tfoot {
   flex-direction: column;
   align-items: center;
   background: #fff;
-  margin: 25% auto;
+  margin: 15% auto;
   padding: 20px;
   border-radius: 8px;
   width: 50%;
@@ -1441,6 +1445,10 @@ table.default tfoot {
 @media screen and (max-width: 736px) {
   .stacks-gallery {
     justify-content: space-evenly;
+  }
+  .modal-content {
+    margin: 40% auto;
+    width: 80%;
   }
 }
 
@@ -1509,6 +1517,7 @@ table.default tfoot {
   z-index: 1;
   font-size: 1em;
   border-radius: 25px;
+  height: 33%;
 }
 
 .poptrox-popup .caption .div-poptrox p {
@@ -1516,13 +1525,14 @@ table.default tfoot {
 }
 
 .poptrox-popup .caption .div-poptrox {
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: left;
   margin-top: 10px;
   margin-left: 40px;
   align-self: center;
   gap: 20px;
+  text-align: left;
 }
 
 .poptrox-popup .caption .div-poptrox h4 {
@@ -1674,6 +1684,15 @@ body.is-touch .poptrox-popup .closer {
   opacity: 1 !important;
 }
 
+@media screen and (max-width: 1150px) {
+  .poptrox-popup .caption {
+    height: 37%;
+  }
+  .poptrox-popup .caption .div-poptrox {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .poptrox-popup .nav-next:before,
   .poptrox-popup .nav-previous:before {
@@ -1695,6 +1714,7 @@ body.is-touch .poptrox-popup .closer {
 
   .poptrox-popup .caption {
     line-height: 20px;
+    height: 30%;
   }
 
   .poptrox-popup .caption .div-poptrox {
@@ -2628,8 +2648,18 @@ body.is-touch .main {
 
 /* Contact */
 
+#profil-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 #contact {
   overflow: hidden;
+  padding-top: 20px;
   padding-bottom: 0;
   color: #fff;
 }
