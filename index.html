@@ -8,9 +8,10 @@
 	<html lang="fr">
 	<head>
 		<title>Marine ROYER Développeur web</title>
+		<link rel="icon" href="./images/thumbs/favicon.png" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="description" content="Portfolio de Marine Royer, développeur web spécialisée en React et Node.js." />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<meta name="twitter:card" content="summary_large_image" />
@@ -28,26 +29,32 @@
 		<meta property="og:description" content="Développeuse web orientée React et Node.js" />
 		<script type="application/ld+json">
 			{
-			  "@context": "https://schema.org",
-			  "@type": "Person",
-			  "name": "Marine Royer",
-			  "jobTitle": "Développeur Web",
-			  "description": "Développeur web spécialisée en React et Node.js. Expertise en développement frontend et backend.",
-			  "url": "https://marine-royer.netlify.app/", 
-			  "sameAs": [
-				"https://www.linkedin.com/in/marine-royer-91b2742a1/",
-				"https://github.com/MarineRoyr"
-			  ],
-			  "knowsAbout": ["React", "Node.js", "JavaScript", "HTML", "CSS"]
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"givenName": "Marine",
+				"familyName": "Royer",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Rue de Dammartin",
+					"addressLocality": "Guerard",
+					"addressRegion": "Ile-de-France",
+					"postalCode": "77580",
+					"addressCountry": "France"
+				},
+				"email": "marine.royr@gmail.com",
+				"telephone": "+33-686-524-851",
+				"jobTitle": "Développeuse web",
+				"url": https://marine-royer.netlify.app/
 			}
-		</script>
+			</script>
+			
 		
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<img src="./images/thumbs/marineRoyer.png" alt="logo"/>
+				<a href="#intro"><img src="./images/thumbs/marineRoyer.png" alt="logo"/></a>
 				<h1>Marine ROYER </h1>
 				<h2>Développeur web junior</h2>
 					<nav>
@@ -59,9 +66,15 @@
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="https://www.linkedin.com/in/marine-royer-91b2742a1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 					<li><a href="https://pin.it/kXcsJuUTq" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-					<li><a href="https://github.com/MarineRoyr"><i class="icon brands fa fa-github" aria-hidden="true"></i>
-					</a></li>
-					</ul>
+					<li>
+						<a href="https://github.com/MarineRoyr">
+						  <span class="label">
+							<i class="icon brands fa fa-github" aria-hidden="true"></i>
+							<span class="sr-only">Visitez mon profil GitHub</span>
+						  </span>
+						</a>
+					  </li>
+				</ul>
 				</nav>
 				
 			</header>
@@ -104,6 +117,15 @@
 						<h2>Mes Stacks</h2>
 					</div>
 					<div class="stacks-gallery"> </div>
+					<div id="modal-overlay" class="modal-overlay">
+						<div class="modal-content">
+							<span id="modal-close" class="modal-close">&times;</span>
+							<img id="modal-image" src="" alt="Stack Image">
+							<h3 id="modal-title"></h3>
+							<div id="modal-progress"></div> <!-- Ajout d'un conteneur pour la barre de progression -->
+						</div>
+					</div>
+					</div>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -174,8 +196,14 @@
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/marine-royer-91b2742a1/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://pin.it/kXcsJuUTq" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-						<li><a href="https://github.com/MarineRoyr"><i class="icon brands fa fa-github" aria-hidden="true"></i>
-						</a></li>
+						<li>
+							<a href="https://github.com/MarineRoyr">
+							  <span class="label">
+								<i class="icon brands fa fa-github" aria-hidden="true"></i>
+								<span class="sr-only">Visitez mon profil GitHub</span>
+							  </span>
+							</a>
+						  </li>
 					</ul>
 
 				<!-- Menu -->

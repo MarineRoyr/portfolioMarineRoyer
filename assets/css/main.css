@@ -855,9 +855,10 @@ input[type="submit"].style2,
 input[type="reset"].style2,
 .button.style2,
 button.style2 {
-  background-color: transparent;
+  background-color: rgba(38, 72, 87, 0.5);
   border: solid 2px #e5e6e7;
   color: inherit;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.8);
 }
 
 input[type="button"].style2:hover,
@@ -882,6 +883,7 @@ input[type="reset"].style2.down,
 .button.style2.down,
 button.style2.down {
   background-image: url("images/arrow.svg");
+  box-shadow: 0 0.2em 0.5em 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Form */
@@ -1364,6 +1366,82 @@ table.default tfoot {
 .stacks-gallery .gallery-item:hover {
   transform: scale(1.1);
   opacity: 0.9;
+}
+/* Styles pour l'overlay de la modale */
+.modal-overlay {
+  display: none; /* Caché par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Couleur de l'overlay */
+  z-index: 9999; /* Pour s'assurer que la modale est au-dessus de tout le reste */
+  overflow: auto;
+  border-radius: 0px 25px 25px 0px;
+}
+
+/* Styles pour le contenu de la modale */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  margin: 25% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Styles pour fermer la modale */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styles pour l'image de la modale */
+#modal-image {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Styles pour le titre et la description */
+#modal-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.progress-fill {
+  display: block;
+  height: 100%;
+  background: rgb(8, 67, 82); /* Valeur par défaut */
+  transition: width 0.3s ease;
+}
+
+@media screen and (max-width: 736px) {
+  .stacks-gallery {
+    justify-content: space-evenly;
+  }
 }
 
 /* Poptrox */
@@ -2129,28 +2207,36 @@ body.is-touch .poptrox-popup .closer {
 
 @media screen and (max-width: 736px) {
   #header {
-    height: 6em;
+    height: 8em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
   #header img {
-    width: 200px;
+    width: 120px;
     height: auto;
+    padding: 0;
+    margin: 0;
   }
 
   #header h1 {
-    position: relative;
-  }
-
-  #header h1 a {
-    font-size: 1em;
+    text-align: center;
+    position: static;
+    margin: 0;
+    padding: 0;
   }
 
   #header h2 {
-    font-size: 0.8em;
-    position: relative;
+    font-size: 1em;
+    text-align: center;
+    position: static;
+    display: none;
   }
 
   #header nav {
@@ -2197,7 +2283,7 @@ main {
 }
 
 main > .fullscreen {
-  min-height: 95vh; /* Garde la hauteur fullscreen */
+  min-height: 94vh; /* Garde la hauteur fullscreen */
 }
 
 .main.style1 {
@@ -2214,7 +2300,7 @@ main > .fullscreen {
 }
 
 .main.style1 h2 {
-  font-size: 4.25em;
+  font-size: 3em;
   line-height: 1em;
 }
 
@@ -2229,6 +2315,10 @@ main > .fullscreen {
   transform: translateZ(0);
   opacity: 1;
   margin: 0;
+  background-color: rgba(38, 72, 87, 0.5);
+  padding: 150px;
+  border-radius: 25px;
+  box-shadow: 0 0.2em 0.5em 0 rgba(0, 0, 0, 0.5);
 }
 
 .main.style1.inactive > .content {
@@ -2324,6 +2414,7 @@ main > .fullscreen {
 
 .main.dark .button.style2 {
   border-color: #ffffff;
+  box-shadow: 0 1em 1em 0 rgba(0, 0, 0, 0.8);
 }
 
 .main.dark .button.style2:hover {
@@ -2399,6 +2490,14 @@ body.is-touch .main {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+
+  .main.style2.left > .content {
+    border-radius: 25px;
+  }
+
+  .main.style2.right > .content {
+    border-radius: 25px;
   }
 
   .main.style3 {
