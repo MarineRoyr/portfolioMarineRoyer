@@ -83,6 +83,7 @@ $(document).ready(function () {
 
             // Gérer le clic sur un élément de la galerie
             $('.gallery-item').on('click', function () {
+                const title = $(this).data('title');
                 const picture = $(this).data('picture');
                 const level = $(this).data('level');
 
@@ -92,7 +93,7 @@ $(document).ready(function () {
                 // Créer le contenu de la barre de progression avec la chaîne de caractères ajoutée
                 const progressBar = `
                     <div>
-                        <h3>Niveau de compétence</h3>
+                        <h3>Niveau de compétence : ${percentage}%</h3>
                         <div class="progress-bar-container">
                             <div class="progress-bar">
                                 <span class="progress-fill" style="width: ${percentage}%; background: ${gradient};"></span>
@@ -101,6 +102,7 @@ $(document).ready(function () {
                     </div>`;
 
                 // Mettre à jour le contenu de la modale
+                $('#modal-title').text(title); // Si vous voulez aussi afficher le titre dans la modale
                 $('#modal-image').attr('src', picture);
                 $('#modal-progress').html(progressBar); // Ajouter la barre de progression dans la modale
 
