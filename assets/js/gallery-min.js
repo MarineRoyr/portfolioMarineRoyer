@@ -1,22 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-    fetch('./data/dataProjets.json')
-        .then(response => response.json())
-        .then(data => {
-            const gallery = document.querySelector('#gallery');
-            gallery.innerHTML = ''; // Vider la galerie pour éviter les duplications
-
-            data.forEach(project => {
-                const stacksList = project.stacks.map(stack => `<li class='stack-gallery'>${stack}</li>`).join('');
-
-                const article = document.createElement('article');
-                article.classList.add('from-bottom')
-
-                // Ajouter un lien vers le site web si websiteUrl est présent
-                const websiteLink = project.websiteUrl ?
-                    `<a href="${project.websiteUrl}" target="_blank" class="website-link">Visiter le site</a>` : '';
-
-                // Nettoyer et échapper le contenu de la légende
-                const captionContent = `
+document.addEventListener('DOMContentLoaded',function(){fetch('./data/dataProjets.json').then(response=>response.json()).then(data=>{const gallery=document.querySelector('#gallery');gallery.innerHTML='';data.forEach(project=>{const stacksList=project.stacks.map(stack=>`<li class='stack-gallery'>${stack}</li>`).join('');const article=document.createElement('article');article.classList.add('from-bottom')
+const websiteLink=project.websiteUrl?`<a href="${project.websiteUrl}" target="_blank" class="website-link">Visiter le site</a>`:'';const captionContent=`
                     <h3>${project.title}</h3>
                       <div class="div-poptrox">
                     <h4>Description :</h4>
@@ -36,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                          ${websiteLink}
                          </div>
                    
-                `.replace(/"/g, '&quot;').replace(/\n/g, '').trim();
-
-                article.innerHTML = `
+                `.replace(/"/g,'&quot;').replace(/\n/g,'').trim();article.innerHTML=`
                      <a href="${project.picture}" class="image fit " data-caption="${captionContent}">
                         <div>
                             <img src="${project.picture}" title="${project.title}" alt="${project.title}">
@@ -47,29 +28,4 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p>${project.description}</p>
                         </div>
                     </a>
-                                   `;
-
-                gallery.appendChild(article);
-            });
-
-            // Initialisation de Poptrox
-            $('#gallery').poptrox({
-                usePopupCaption: true,   // Utilisation des légendes dans les popups
-                caption: function ($a) {
-                    return $a.attr('data-caption');  // Récupération du contenu de la légende depuis l'attribut data-caption
-                },
-                overlayColor: '#000',
-                overlayOpacity: 0.75,
-                useBodyOverflow: false,
-                usePopupCloser: true,
-                usePopupNav: true,
-                usePopupDefaultStyling: false,
-                popupSpeed: 300,
-                windowMargin: 50,
-                popupWidth: '85%',
-                popupHeight: '75%',
-                fadeSpeed: 300,
-            });
-        })
-        .catch(error => console.error('Erreur lors du chargement des projets:', error));
-});
+                                   `;gallery.appendChild(article)});$('#gallery').poptrox({usePopupCaption:!0,caption:function($a){return $a.attr('data-caption')},overlayColor:'#000',overlayOpacity:0.75,useBodyOverflow:!1,usePopupCloser:!0,usePopupNav:!0,usePopupDefaultStyling:!1,popupSpeed:300,windowMargin:50,popupWidth:'85%',popupHeight:'75%',fadeSpeed:300,})}).catch(error=>console.error('Erreur lors du chargement des projets:',error))})

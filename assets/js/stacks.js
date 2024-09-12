@@ -40,11 +40,13 @@ $(document).ready(function () {
                 const gradient = getGradientFromLevel(stack.level);
                 const percentage = stack.level * 10; // Convertir le niveau en pourcentage (1-10 -> 10%)
 
+                const title = stack.title ? stack.title : 'Titre non disponible';
+
                 // Générer l'élément de la galerie sans la barre de progression
                 const $galleryItem = $(`
                     <div class="gallery-item" data-title="${stack.title}" data-picture="${stack.picture}" data-level="${stack.level}">
                         <img src="${stack.picture}" alt="${stack.title}">
-                        <h3>${stack.title}</h3>
+                        <h3>${title}</h3>
                     </div>
                 `);
 
@@ -102,7 +104,7 @@ $(document).ready(function () {
                     </div>`;
 
                 // Mettre à jour le contenu de la modale
-                $('#modal-title').text(title); // Si vous voulez aussi afficher le titre dans la modale
+                $('#modal-title').text(title ? title : 'Titre non disponible'); // Si vous voulez aussi afficher le titre dans la modale
                 $('#modal-image').attr('src', picture);
                 $('#modal-progress').html(progressBar); // Ajouter la barre de progression dans la modale
 
