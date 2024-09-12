@@ -1,7 +1,7 @@
 [  
     {
     "title": "Quelle-Date",
-    "picture": "images/thumbs/projets/quelle-date.png",
+    "picture": "images/thumbs/projets/quelle-date.webp",
     "description": "Application web de recherche historique & génération de fiche révision. ",
     "works" : "La difficulté est venue des données historiques variables, le CSS  & la génération de pdf ont dû s'adapter. Ce site est un projet encore en développement.",
     "stacks": ["React", "Sass"],
@@ -10,7 +10,7 @@
     },
     {
         "title": "Kasa",
-        "picture": "images/thumbs/projets/kasa.png",
+        "picture": "images/thumbs/projets/kasa.webp",
         "description": "Application web d'annonces de locations immobilières",
         "works" : "Maîtrise de React et de son principes de composants imbriqués et hooks. Le challenge fut de créer des animations CSS fluides sur le collapse et une expérience visuelle agréable.",
         "stacks": ["React", "Sass"],
@@ -19,7 +19,7 @@
     },
     {
         "title": "Mon Vieux Grimoire",
-        "picture": "images/thumbs/projets/monVieuxGrimoire.png",
+        "picture": "images/thumbs/projets/monVieuxGrimoire.webp",
         "description": "Site de présentation & de notation de livres",
         "works" : "Projet pour appréhender la puissance de Node.js et l'architecture MVC en back end. ",
         "stacks": ["Node.js", "React"],
@@ -27,7 +27,7 @@
     },
     {
         "title": "Nina Carducci",
-        "picture": "images/thumbs/projets/ninaCarducci.png",
+        "picture": "images/thumbs/projets/ninaCarducci.webp",
         "description":"Site vitrine d'une photographe professionnelle",
         "works": "Optimisation des performances du site & du référencement naturel/SEO",
         "stacks": ["SEO"],
@@ -36,7 +36,7 @@
     },
     {
         "title": "Portfolio Sophie Bluel",
-        "picture": "images/thumbs/projets/sophieBluel.png",
+        "picture": "images/thumbs/projets/sophieBluel.webp",
         "description": "Portfolio d'une architecte d'intérieur avec espace Admin",
         "works" : "Projet pour appréhender la logique javascript, création d'un mode admin avec requêtes http du front end vers le back end et manipulation des données.",
         "stacks": ["Javascript", "Intégration Html"],
@@ -44,7 +44,7 @@
     },
     {
         "title": "Booki",
-        "picture": "images/thumbs/projets/booki.png",
+        "picture": "images/thumbs/projets/booki.webp",
         "description": "Site pour le tourisme & la location saisonnière",
         "works" : "Apprentissage de la sémantique HTML5, des bonnes pratiques du responsive et de CSS3. Challenge avec créations de cards, utilisation des grids css et des media queries.",
         "stacks": ["Integration HTML", "Figma"],
