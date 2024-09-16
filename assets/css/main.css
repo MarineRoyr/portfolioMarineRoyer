@@ -2165,6 +2165,7 @@ body.is-touch .poptrox-popup .closer {
 
   .gallery article {
     width: 100%;
+    margin-left: 0px;
   }
 }
 
